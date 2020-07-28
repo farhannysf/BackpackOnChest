@@ -26,8 +26,6 @@ _unit removeEventHandler ["GetOutMan",(_var select 1) select 1];
 _unit removeEventHandler ["AnimDone",(_var select 1) select 2];
 _unit removeEventHandler ["Killed",(_var select 1) select 3];
 
-[_unit, "forceWalk", "BackpackOnChest", false] call ace_common_fnc_statusEffect_set;
-
 //reset variable
 _unit setVariable ["zade_boc_chestpack",nil,true];
 _unit setVariable ["zade_boc_radioSettings",nil,true];

@@ -25,5 +25,3 @@ private _chestpack = [_unit] call zade_boc_fnc_chestpackContainer;
 [_chestpack, [_unit,[0,-0.03,-0.5],"pelvis"]] remoteExec ["attachTo", 0];
 [_chestpack, [[-0.25,-1,0],[0,0,1]]] remoteExec ["setVectorDirAndUp", 0];
 [_chestpack, false] remoteExec ["hideObjectGlobal", 0];
-
-[_unit, "forceWalk", "BackpackOnChest", true] call ace_common_fnc_statusEffect_set;
